@@ -1,5 +1,5 @@
 import { Header } from '../components/Header';
 
 export default function Home() {
-  return <Header>Hello from vanilla-extract!</Header>;
+  return <Header>Hello from vanilla-extract! 🧁</Header>;
 }

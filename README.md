@@ -13,14 +13,29 @@ This is an example [Next.js](https://nextjs.org) project using [🧁 vanilla-ext
 ---
 
 Notable changes I made to the basic [Next.js example](https://nextjs.org/learn):
- - Switched to Yarn.
- - Switched to TypeScript.
- - Installed deps with `yarn add --dev @vanilla-extract/next-plugin @vanilla-extract/babel-plugin @vanilla-extract/css`.
- - Added a `next.config.js` using `@vanilla-extract/next-plugin`.
- - Added a `.babelrc` using `@vanilla-extract/babel-plugin`.
- - Introduced a `components` folder and added a `HelloWorld` component with a matching `HelloWorld.css.ts` file, then rendered it on the index page.
- - Added a `browserslist` field to `package.json`.
+
+- Switched to Yarn.
+- Switched to TypeScript.
+- Installed deps with `yarn add --dev @vanilla-extract/next-plugin @vanilla-extract/babel-plugin @vanilla-extract/css`.
+- Added a `next.config.js` using `@vanilla-extract/next-plugin`.
+- Added a `.babelrc` using `@vanilla-extract/babel-plugin`.
+- Introduced a `components` folder and added a `HelloWorld` component with a matching `HelloWorld.css.ts` file, then rendered it on the index page.
+- Added a `browserslist` field to `package.json`.
 
 ---
 
 This repo was originally based on work found in the vanilla-extract GitHub discussion ["Usage with Nextjs"](https://github.com/seek-oss/vanilla-extract/discussions/89), which then turned into the official Next.js plugin. Thanks to the community for helping out on this 🙏
+
+```ts
+import { style } from '@vanilla-extract/css';
+
+export const root = style({
+  background: 'pink',
+  color: 'blue',
+  padding: '16px',
+  transition: 'opacity .1s ease', // Testing autoprefixer
+  ':hover': {
+    opacity: 0.8,
+  },
+});
+```
