@@ -26,6 +26,11 @@ Notable changes I made to the basic [Next.js example](https://nextjs.org/learn):
 
 This repo was originally based on work found in the vanilla-extract GitHub discussion ["Usage with Nextjs"](https://github.com/seek-oss/vanilla-extract/discussions/89), which then turned into the official Next.js plugin. Thanks to the community for helping out on this 🙏
 
+## Demo 1
+
+`style()`
+Think of it as css modules
+
 ```ts
 import { style } from '@vanilla-extract/css';
 
@@ -39,3 +44,6 @@ export const root = style({
   },
 });
 ```
+
+This file will create the style at build time
+Nothing in JS
