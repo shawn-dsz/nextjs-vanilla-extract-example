@@ -100,3 +100,7 @@ export const background = styleVariants(vars.color, (background) => ({
 ```
 
 Demo type alias
+
+# Demo 4
+
+Sprinkles = makes it easier to share code
