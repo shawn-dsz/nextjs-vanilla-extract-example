@@ -47,3 +47,40 @@ export const root = style({
 
 This file will create the style at build time
 Nothing in JS
+
+Demo 2
+
+CSS Variables
+
+Global means the Variables are not attached to a class
+
+Demo createGlobalTheme
+// create css variables in theme.css.ts
+
+```typescript
+import { createGlobalTheme } from '@vanilla-extract/css';
+
+export const vars = createGlobalTheme(':root', {
+  color: {
+    pink: 'pink',
+    blue: 'blue',
+    navy: 'navy',
+    red: 'red',
+  },
+  space: {
+    small: '8px',
+    medium: '16px',
+    large: '24px',
+  },
+  font: {
+    body: 'arial',
+  },
+});
+```
+
+replace styles in Header.css.ts
+
+You can that css variables have been hashed, show the css built file
+
+createGlobalTheme defines a
+---
