@@ -82,5 +82,21 @@ replace styles in Header.css.ts
 
 You can that css variables have been hashed, show the css built file
 
-createGlobalTheme defines a
----
+## createGlobalTheme defines a
+
+# Demo 3
+
+Namespacing
+have the option to have variants
+
+Demo component type definition
+
+Demo theme color Map
+
+```typescript
+export const background = styleVariants(vars.color, (background) => ({
+  background,
+}));
+```
+
+Demo type alias

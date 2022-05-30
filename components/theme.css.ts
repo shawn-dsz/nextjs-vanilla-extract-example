@@ -5,6 +5,7 @@
      pink: 'pink',
      blue: 'blue',
      navy: 'navy',
+     aqua: 'aqua',
      red: 'red',
    },
    space: {
